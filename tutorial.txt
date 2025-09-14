@@ -28,3 +28,9 @@ robot.move_forward(3)
 robot.turn_left()
 robot.move_forward(2)
 
+
+# add the remaining functions
+# then create a script to automatically move through a route
+
+
+
