@@ -5,8 +5,6 @@ A project for building and experimenting with robotics using code.
 ## Features
 
 - Modular robot control
-- Sensor integration
-- Simulation and real hardware support
 
 ## Getting Started
 
