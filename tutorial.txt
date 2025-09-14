@@ -1,0 +1,30 @@
+# Robot Tutorial
+
+This tutorial will guide you through building a simple robot program in Python using `main.py`. We'll implement the project in 3 stages: basic movement, adding sensors, and introducing decision-making.
+
+---
+
+## Stage 1: Basic Movement
+
+**Objective:** Make the robot move forward and turn.
+
+**main.py Example:**
+
+class Robot:
+    def __init__(self):
+        self.position = 0
+        self.direction = 'NORTH'
+
+    def move_forward(self, steps=1):
+        self.position += steps
+        print(f"Moved forward {steps} steps. Position: {self.position}")
+
+    def turn_left(self):
+        self.direction = 'WEST' if self.direction == 'NORTH' else 'NORTH'
+        print(f"Turned left. Now facing {self.direction}")
+
+robot = Robot()
+robot.move_forward(3)
+robot.turn_left()
+robot.move_forward(2)
+
