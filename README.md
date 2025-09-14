@@ -19,16 +19,15 @@ A project for building and experimenting with robotics using code.
     ```bash
     pip install -r requirements.txt
     ```
-3. Run the main application:
+3. Run the first application:
     ```bash
-    python main.py
+    python robot.py
     ```
 
 ## Project Structure
 
-- `main.py` — Entry point for the robot controller
-- `robot/` — Core robot logic and modules
-- `sensors/` — Sensor integration code
+- `robot.py` — basic library code with test example
+- `tut2.py`  — tutorial using robot library
 
 ## Contributing
 
