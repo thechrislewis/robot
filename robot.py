@@ -1,6 +1,12 @@
 #robot.py - lib and class definition for robot control
 
 class Robot:
+
+    #initialize robot
+    def __init__(self, ):
+        print("Robot Initialized")
+
+
     def fwd(self):
         print("Moving Forward")
 
@@ -20,7 +26,7 @@ class Robot:
 
 #test code
 if __name__ == "__main__":
-    
+
     robbie = Robot()
     robbie.fwd()
     robbie.back()
