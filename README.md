@@ -12,7 +12,7 @@ A project for building and experimenting with robotics using code.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/robot.git
+    git clone https://github.com/thechrislewis/robot.git
     cd robot
     ```
 2. Install dependencies:
