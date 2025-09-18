@@ -44,13 +44,26 @@ class Robot:
         pin2.write_analog(180)   # full forward
 
     def back(self):
-       
+        display.show(Image.ARROW_S)
+        pin1.write_analog(0) # full forward
+        pin2.write_analog(0)   # full forward
+
         
     def left(self):
-        pass:
-    
+        pin1.write_analog(180) # full forward
+        pin2.write_analog(0)   # full forward
+        display.show(Image.ARROW_W)
+        self.leds.clear()
+        self.leds[0] = (255,0,0)
+        self.leds.show()
+        
     def right(self):
-        pass:
+        pin1.write_analog(0) # full forward
+        pin2.write_analog(180)   # full forward
+        display.show(Image.ARROW_E)
+        self.leds.clear()
+        self.leds[4] = (255,0,0)
+        self.leds.show()
         
     def stop(self):
         display.show(Image.SQUARE)
@@ -76,7 +89,7 @@ if __name__ == "__main__":
             run_code = False
             robbie.stop()
 
-        # the code below takes at least 4 seconds to run before a button press can be checked...
+        # why does the code below takes at least 4 seconds to run before a button press can be checked...
         if run_code: 
             robbie.fwd()
             sleep(1000)
