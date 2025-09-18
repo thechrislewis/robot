@@ -24,8 +24,7 @@ A project for building and experimenting with robotics using code.
 
 ## Project Structure
 
-- `robot.py` — basic library code with test example
-- `tut2.py`  — tutorial using robot library
+
 
 ## Contributing
 
